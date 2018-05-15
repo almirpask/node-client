@@ -5,7 +5,7 @@ import morgan from 'morgan';
 
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 app.use(morgan(':method :url :response-time'))
 
@@ -18,7 +18,7 @@ app.listen(port, function(err){
     if(err){
         console.log(err);
     }
-    // else{
-    //     open(`http://localhost:${port}`)
-    // }
+     else{
+         open(`http://localhost:${port}`)
+     }
 })
